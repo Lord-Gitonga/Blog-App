@@ -6,7 +6,10 @@ function Navbar() {
     <div className='navbar'>
        <div className="container">
               <div className="logo">
-                  <img src={Logo} alt='Logo Name'/>
+                  <Link to='/'>
+                      <img src={Logo} alt='Logo Name'/>
+                  </Link>
+                  
               </div>
               <div className="links">
                   <Link className='link' to='/?cat=art'>
