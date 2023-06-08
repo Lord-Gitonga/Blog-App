@@ -1,9 +1,11 @@
-import React from 'react'
 import Edit from '../img/edit.png'
 import Delete from '../img/delete.png'
 import { Link } from 'react-router-dom'
 import Menu from '../components/Menu'
 function Single() {
+
+    
+
   return (
       <div className="single">
           <div className="content">
@@ -18,15 +20,17 @@ function Single() {
                       <Link to={`/write?edit=2`}>
                           <img src={Edit} alt="name" />
                         </Link>
-                      <img src={Delete} alt="name"/>
+                      <img src={Delete} alt="name" />
                   </div>
 
               </div>
-              <h1>Lorem ipsum dolor sit amet</h1>
+              <h1>Lemon</h1>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nihil at ad mollitia laboriosam quia earum voluptate nesciunt. Laudantium, incidunt fugit reiciendis doloribus totam eveniet repellendus quae ea deleniti labore.
+                  Lemons are a rich source of vitamin C, providing over 100% of the recommended daily intake in just one medium-sized fruit. Vitamin C is an essential nutrient that supports the immune system, promotes skin health, and acts as an antioxidant in the body.
+
+                In addition to vitamin C, lemons contain various other vitamins and minerals, including vitamin B6, potassium, and folate. They also contain dietary fiber, although it is mostly found in the pulp rather than the juice.
                   <br /><br />
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, aut quibusdam recusandae sapiente adipisci nesciunt sunt harum numquam fugiat laboriosam praesentium eligendi saepe. Error consequatur corrupti debitis, sapiente sit hic!
+                  Lemons are widely used in culinary applications, adding a tangy and acidic flavor to dishes and beverages. They are often used as a flavoring agent in cooking, baking, and salad dressings. Lemon juice is also popularly used to make lemonade, a refreshing and thirst-quenching drink.
               </p>
           </div>
           <Menu/>
