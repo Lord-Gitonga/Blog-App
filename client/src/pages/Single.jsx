@@ -32,6 +32,28 @@ function Single() {
                   <br /><br />
                   Lemons are widely used in culinary applications, adding a tangy and acidic flavor to dishes and beverages. They are often used as a flavoring agent in cooking, baking, and salad dressings. Lemon juice is also popularly used to make lemonade, a refreshing and thirst-quenching drink.
               </p>
+              
+            <img src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" alt="name" />
+              <div className="user">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="name" />
+                  <div className="info">
+                      <span>Morris</span>
+                      <p>Posted just now</p>
+                  </div>
+                  <div className="edit">
+                      <Link to={`/write?edit=2`}>
+                          <img src={Edit} alt="name" />
+                        </Link>
+                      <img src={Delete} alt="name" />
+                  </div>
+
+              </div>
+              <h1>Banana</h1>
+              <p>
+                  Versatility: Bananas are a versatile fruit that can be enjoyed in various ways. They can be eaten on their own, added to smoothies, used as a topping for cereal or yogurt, or incorporated into baked goods like banana bread. Ripe bananas can even be frozen and blended into a creamy, dairy-free ice cream alternative.
+                  <br /><br />
+                  Health Benefits: Bananas offer several health benefits. They are rich in potassium, which helps maintain proper heart function and blood pressure levels. The fiber content in bananas promotes healthy digestion and can aid in managing weight. Bananas also contain antioxidants, which contribute to overall health and may have anti-inflammatory properties.
+              </p>
           </div>
           <Menu/>
     </div>
