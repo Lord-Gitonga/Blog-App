@@ -42,7 +42,7 @@ function Write() {
             <ReactQuill className='editor' theme="snow" value={value} onChange={setValue} />
           </div>
       </div>
-      <div className="menu">
+    <div className="menu">
         <div className="item">
           <h1>Publish</h1>
           <span>
@@ -79,8 +79,7 @@ function Write() {
             <input type="radio" name='cat' value='design' id='design' onChange={e=>setCat(e.target.value)}/>
             <label htmlFor="design">DESIGN</label>
           </div>
-
-          <div className="cat">
+         <div className="cat">
               <input type="radio" name='cat' value='technology' id='technology' onChange={e=>setCat(e.target.value)}/>
               <label htmlFor="technology">TECHNOLOGY</label>
           </div>

@@ -1,14 +1,37 @@
+import { useEffect, useState } from 'react'
 import Edit from '../img/edit.png'
 import Delete from '../img/delete.png'
 import { Link } from 'react-router-dom'
 import Menu from '../components/Menu'
 function Single() {
 
-    
+  const[posts, setPosts]=useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:9292/posts')
+      .then(res => res.json())
+    .then(posts => {
+            setPosts(posts)
+          })
+  }, [])
+
+
+  const handleDelete = () => {
+    fetch('http://localhost:9292/posts', {
+        method: 'DELETE',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  id: 1
+                })
+      })
+    }
 
   return (
       <div className="single">
-          <div className="content">
+      <div className="content">
+        
               <img src="https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="name" />
               <div className="user">
                   <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="name" />
@@ -20,7 +43,7 @@ function Single() {
                       <Link to={`/write?edit=2`}>
                           <img src={Edit} alt="name" />
                         </Link>
-                      <img src={Delete} alt="name" />
+            <img src={Delete} alt="name" onClick={handleDelete}/>
                   </div>
 
               </div>
